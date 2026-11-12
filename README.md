@@ -4,11 +4,11 @@ Public installers, release notes and video guides for JokerForge. This repositor
 
 ## Current tester release
 
-[JokerForge 0.19.0-beta.9](https://github.com/cristhiandcl/JokerForge-releases/releases/tag/v0.19.0-beta.9) includes 26 offline Help topics and 17 captioned walkthroughs, with existing harness, connection, shared-tool and crew functionality retained.
+[JokerForge 0.19.0-beta.10](https://github.com/cristhiandcl/JokerForge-releases/releases/tag/v0.19.0-beta.10) fixes crew-worker startup/recovery, rejected-model handling, recent operational issue history and Settings/About update parity. It retains 26 offline Help topics, 17 captioned walkthroughs and existing harness, connection and shared-tool functionality.
 
-- [macOS Apple silicon installer](https://github.com/cristhiandcl/JokerForge-releases/releases/download/v0.19.0-beta.9/JokerForge-0.19.0-beta.9-arm64.dmg): macOS 26 or later; Developer ID signed, Apple notarized and stapled.
-- [Windows x64 installer](https://github.com/cristhiandcl/JokerForge-releases/releases/download/v0.19.0-beta.9/JokerForge-0.19.0-beta.9-x64-Setup.exe).
-- [Windows ARM64 installer](https://github.com/cristhiandcl/JokerForge-releases/releases/download/v0.19.0-beta.9/JokerForge-0.19.0-beta.9-arm64-Setup.exe).
+- [macOS Apple silicon installer](https://github.com/cristhiandcl/JokerForge-releases/releases/download/v0.19.0-beta.10/JokerForge-0.19.0-beta.10-arm64.dmg): macOS 26 or later; Developer ID signed, Apple notarized and stapled.
+- [Windows x64 installer](https://github.com/cristhiandcl/JokerForge-releases/releases/download/v0.19.0-beta.10/JokerForge-0.19.0-beta.10-x64-Setup.exe).
+- [Windows ARM64 installer](https://github.com/cristhiandcl/JokerForge-releases/releases/download/v0.19.0-beta.10/JokerForge-0.19.0-beta.10-arm64-Setup.exe).
 
 Windows downloads are unsigned manual prerelease testers. Certificate enrollment, native-device acceptance and signed Windows auto-updates remain open release gates. Check the release notes before installing and retain your existing workspace when replacing the app. A native Linux desktop installer is not available yet.
 
@@ -27,8 +27,8 @@ The videos demonstrate real controls and local tool operations with scripted mod
 
 ## Updates and support
 
-On the Mac, use **About → Check for updates**, review what's new, download the update and choose **Restart now** or **Later**. Restart now restarts JokerForge, not the computer. Automatic update discovery also checks at app startup and periodically. Windows testers currently replace the app with the matching manual installer.
+On the Mac, use **About → Check for updates** or **Settings → Desktop → Updates**, review what's new, download the update and choose **Restart now** or **Later**. Restart now restarts JokerForge, not the computer. Automatic update discovery also checks at app startup and periodically. Windows testers currently replace the app with the matching manual installer.
 
-Diagnostic exports can be reviewed and saved locally. Private coded error reporting is optional and starts disabled; it is separate from sharing a diagnostic export. Do not post credentials, private conversations or diagnostic bundles in this public repository.
+Select a real recent issue in About to preview its safe category and delivery state. Local history remains separate from the upload queue. Diagnostic exports can be reviewed and saved locally. Private coded error reporting is optional and starts disabled; it is separate from sharing a diagnostic export. Do not post credentials, private conversations or diagnostic bundles in this public repository.
 
 JokerForge builds on Omnigent and other open-source components. Release packages include applicable notices and corresponding source materials. See each release's SHA256SUMS and manifest to identify its exact downloads.
