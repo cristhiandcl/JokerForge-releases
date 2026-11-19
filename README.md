@@ -4,13 +4,13 @@ Public installers, release notes and video guides for JokerForge. This repositor
 
 ## Current tester release
 
-[JokerForge 0.19.0-beta.14 for macOS](https://github.com/cristhiandcl/JokerForge-releases/releases/tag/v0.19.0-beta.14) adds CLI session actions and observed JSON/JSONL execution through the existing engine. Existing GUI sessions, projects, crews, connections, shared capabilities, reporting and Help remain available.
+[JokerForge 0.19.0-beta.14 for macOS and Windows](https://github.com/cristhiandcl/JokerForge-releases/releases/tag/v0.19.0-beta.14) adds CLI session actions and observed JSON/JSONL execution through the existing engine. Existing GUI sessions, projects, crews, connections, shared capabilities, reporting and Help remain available.
 
 - [macOS Apple silicon beta.14 installer](https://github.com/cristhiandcl/JokerForge-releases/releases/download/v0.19.0-beta.14/JokerForge-0.19.0-beta.14-arm64.dmg): macOS 26 or later; Developer ID signed, Apple notarized and stapled. A working Mac updater can install beta.14 from About or Settings, Desktop, Updates.
-- [Windows x64 beta.13 installer](https://github.com/cristhiandcl/JokerForge-releases/releases/download/v0.19.0-beta.13/JokerForge-0.19.0-beta.13-x64-Setup.exe).
-- [Windows ARM64 beta.13 installer](https://github.com/cristhiandcl/JokerForge-releases/releases/download/v0.19.0-beta.13/JokerForge-0.19.0-beta.13-arm64-Setup.exe).
+- [Windows x64 beta.14 installer](https://github.com/cristhiandcl/JokerForge-releases/releases/download/v0.19.0-beta.14/JokerForge-0.19.0-beta.14-x64-Setup.exe).
+- [Windows ARM64 beta.14 installer](https://github.com/cristhiandcl/JokerForge-releases/releases/download/v0.19.0-beta.14/JokerForge-0.19.0-beta.14-arm64-Setup.exe).
 
-Windows beta.14 candidates are being checked privately and are not part of the Mac beta.14 release. Public Windows beta.13 remains available as an unsigned manual tester build. Windows signing/automatic updates, standard-user and native ARM64 device acceptance remain pending. A native Linux desktop installer is not available yet.
+Windows beta.14 installers are unsigned manual tester builds. Installed x64 CLI discovery, session inspection and one Claude Code JSONL turn passed under the available Administrator account, with one prompt and one reply confirmed in the app. Windows signing/automatic updates, standard-user and native ARM64 device acceptance remain pending. A native Linux desktop installer is not available yet.
 
 Retain your existing workspace when replacing the app. If a Mac beta.10 installation already says updates are not configured because generated cache files invalidated its signature, use the new DMG once: quit JokerForge and replace the app in Applications without deleting app data. A release feed cannot repair that already disabled updater.
 
