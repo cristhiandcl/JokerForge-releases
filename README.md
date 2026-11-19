@@ -2,17 +2,17 @@
 
 Public installers, release notes and video guides for JokerForge. This repository hosts downloads; application source development is maintained separately.
 
-## Current tester releases
+## Current tester release
 
-[macOS 0.19.0-beta.12](https://github.com/cristhiandcl/JokerForge-releases/releases/tag/v0.19.0-beta.12) fixes a Python cache/signature issue that could disable the updater. It retains existing harnesses, model connections, shared tools, crew recovery, reporting and Help, plus initial CLI discovery and host selection.
+[JokerForge 0.19.0-beta.13](https://github.com/cristhiandcl/JokerForge-releases/releases/tag/v0.19.0-beta.13) provides matching macOS Apple silicon and Windows x64/ARM64 builds. It fixes the Windows CLI bridge and preserves the existing multi-harness engine, connections, shared capabilities, reporting and Help.
 
-- [macOS Apple silicon installer](https://github.com/cristhiandcl/JokerForge-releases/releases/download/v0.19.0-beta.12/JokerForge-0.19.0-beta.12-arm64.dmg): macOS 26 or later; Developer ID signed, Apple notarized and stapled.
-- [Windows x64 beta.10 installer](https://github.com/cristhiandcl/JokerForge-releases/releases/download/v0.19.0-beta.10/JokerForge-0.19.0-beta.10-x64-Setup.exe).
-- [Windows ARM64 beta.10 installer](https://github.com/cristhiandcl/JokerForge-releases/releases/download/v0.19.0-beta.10/JokerForge-0.19.0-beta.10-arm64-Setup.exe).
+- [macOS Apple silicon installer](https://github.com/cristhiandcl/JokerForge-releases/releases/download/v0.19.0-beta.13/JokerForge-0.19.0-beta.13-arm64.dmg): macOS 26 or later; Developer ID signed, Apple notarized and stapled.
+- [Windows x64 installer](https://github.com/cristhiandcl/JokerForge-releases/releases/download/v0.19.0-beta.13/JokerForge-0.19.0-beta.13-x64-Setup.exe).
+- [Windows ARM64 installer](https://github.com/cristhiandcl/JokerForge-releases/releases/download/v0.19.0-beta.13/JokerForge-0.19.0-beta.13-arm64-Setup.exe).
 
-Mac and public Windows downloads currently have different versions. Windows beta.12 remains private pending native checks. Windows downloads are unsigned manual prerelease testers; signing and automatic updates remain deferred. Retain your existing workspace when replacing the app. A native Linux desktop installer is not available yet.
+Windows downloads are unsigned manual prerelease testers. Signing and automatic updates remain deferred. Installed Windows x64 CLI checks passed under the available Administrator account; standard-user and native Windows ARM64 device acceptance remain pending. Retain your existing workspace when replacing the app. A native Linux desktop installer is not available yet.
 
-If an installed Mac beta.10 already says updates are not configured, use the beta.12 DMG once: quit JokerForge and replace the app in Applications without deleting app data. An update feed cannot repair that already disabled updater. Working Mac updaters can install beta.12 normally from either update screen.
+Working Mac updaters can install this release from either update screen. If an installed Mac beta.10 already says updates are not configured because its signature was invalidated by generated cache files, use the new DMG once: quit JokerForge and replace the app in Applications without deleting app data. An update feed cannot repair that already disabled updater.
 
 ## Guides and demos
 
