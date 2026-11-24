@@ -4,17 +4,25 @@ Public installers, release notes and video guides for JokerForge. This repositor
 
 ## Current tester release
 
-[JokerForge 0.19.0-beta.18](https://github.com/cristhiandcl/JokerForge-releases/releases/tag/v0.19.0-beta.18) provides matching macOS Apple silicon and Windows x64/ARM64 builds. It repairs paired advisor-tool history during Claude resume, preserves saved chats, and includes the worker recovery, MCP lifecycle and Windows CLI input fixes.
+[JokerForge 0.19.0-beta.20](https://github.com/cristhiandcl/JokerForge-releases/releases/tag/v0.19.0-beta.20) provides matching macOS Apple silicon and Windows x64/ARM64 builds. It adds offline CLI help, opt-in static shell completion and a bundled quickstart, fixes literal argument forwarding through the Windows launcher, and retains the earlier session/crew/MCP/Claude history fixes.
 
-- [macOS Apple silicon installer](https://github.com/cristhiandcl/JokerForge-releases/releases/download/v0.19.0-beta.18/JokerForge-0.19.0-beta.18-arm64.dmg): macOS 26 or later; Developer ID signed, Apple notarized and stapled.
-- [Windows x64 installer](https://github.com/cristhiandcl/JokerForge-releases/releases/download/v0.19.0-beta.18/JokerForge-0.19.0-beta.18-x64-Setup.exe).
-- [Windows ARM64 installer](https://github.com/cristhiandcl/JokerForge-releases/releases/download/v0.19.0-beta.18/JokerForge-0.19.0-beta.18-arm64-Setup.exe).
+- [macOS Apple silicon installer](https://github.com/cristhiandcl/JokerForge-releases/releases/download/v0.19.0-beta.20/JokerForge-0.19.0-beta.20-arm64.dmg): macOS 26 or later; Developer ID signed, Apple notarized and stapled.
+- [Windows x64 installer](https://github.com/cristhiandcl/JokerForge-releases/releases/download/v0.19.0-beta.20/JokerForge-0.19.0-beta.20-x64-Setup.exe).
+- [Windows ARM64 installer](https://github.com/cristhiandcl/JokerForge-releases/releases/download/v0.19.0-beta.20/JokerForge-0.19.0-beta.20-arm64-Setup.exe).
 
-Windows installers are unsigned manual prerelease builds. Signing and automatic updates remain deferred. The owner reports all 16 installed Windows x64 checks pass under the available Administrator account. Standard-user and native Windows ARM64 device acceptance remain unverified. Retain the existing workspace and credential store when replacing the app. No native Linux desktop or Intel Mac installer is included.
+Windows installers are unsigned manual prerelease builds. Signing and automatic updates remain deferred. The owner reports all 23 installed Windows x64 checks pass under the available Administrator account. Standard-user and native Windows ARM64 device acceptance remain unverified. Retain the existing workspace and credential store when replacing the app. No native Linux desktop or Intel Mac installer is included.
 
-Working Mac updaters can offer this release through Check for Updates. If an older Mac build already says updates are not configured because its installed signature was invalidated, use the DMG once: quit JokerForge and replace the app in Applications without deleting app data. An update feed cannot repair that already disabled updater remotely.
+After replacing Windows, existing owned CLI registrations need this explicit refresh in PowerShell:
 
-After updating an affected Claude chat, reopen that existing chat and send one harmless new continuation. The original Mac chat's live-provider confirmation is still pending; the reproduced failure and preserved-history E2E pass. See the release notes for verification and limits.
+```powershell
+& "$env:LOCALAPPDATA\JokerForge\bin\jokerforge.cmd" --json integration install
+```
+
+Only an exact recognized older owned launcher is replaced. Modified or foreign files remain conflicts; workspace, credentials, PATH and registry remain intact. The installed read-only checks do not perform this action.
+
+Working Mac updaters can offer this release through Check for Updates. If an older Mac build already says updates are not configured because its installed signature was invalidated, use the DMG once: quit JokerForge and replace the app in Applications without deleting app data. A release feed cannot repair that already disabled updater remotely.
+
+The original Mac resumed-Claude chat passed beta.18 owner acceptance. Owner Mac beta.20 update/normal-chat checks follow publication. See the release notes for validation and limits.
 
 ## Guides and demos
 
