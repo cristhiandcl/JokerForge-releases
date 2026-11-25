@@ -4,19 +4,20 @@ Public installers, release notes and video guides for JokerForge. This repositor
 
 ## Current tester release
 
-[JokerForge 0.19.0-beta.21](https://github.com/cristhiandcl/JokerForge-releases/releases/tag/v0.19.0-beta.21) provides matching Mac Apple silicon and Windows x64/ARM64 builds. About JokerForge now offers bundled terminal command setup with explicit optional user PATH configuration. Plain session list shows readable titles, status, harnesses and full IDs; JSON/JSONL stays unchanged. Offline CLI help, static shell completion, quickstart and prior session/crew/MCP/Claude history fixes remain.
+[JokerForge 0.19.0-beta.22](https://github.com/cristhiandcl/JokerForge-releases/releases/tag/v0.19.0-beta.22) provides matching Mac Apple silicon and Windows x64/ARM64 builds. Claude login-expiry guidance now points to JokerForge Settings for the session's host, and local setup retains an explicit Sign in again action. Stored history, credential ownership and the existing CLI/session/crew/MCP fixes are preserved.
 
-- [Mac Apple silicon installer](https://github.com/cristhiandcl/JokerForge-releases/releases/download/v0.19.0-beta.21/JokerForge-0.19.0-beta.21-arm64.dmg): macOS 26 or later; Developer ID signed, Apple notarized and stapled.
-- [Windows x64 installer](https://github.com/cristhiandcl/JokerForge-releases/releases/download/v0.19.0-beta.21/JokerForge-0.19.0-beta.21-x64-Setup.exe).
-- [Windows ARM64 installer](https://github.com/cristhiandcl/JokerForge-releases/releases/download/v0.19.0-beta.21/JokerForge-0.19.0-beta.21-arm64-Setup.exe).
+- [Mac Apple silicon installer](https://github.com/cristhiandcl/JokerForge-releases/releases/download/v0.19.0-beta.22/JokerForge-0.19.0-beta.22-arm64.dmg): macOS 26 or later; Developer ID signed, Apple notarized and stapled.
+- [Windows x64 installer](https://github.com/cristhiandcl/JokerForge-releases/releases/download/v0.19.0-beta.22/JokerForge-0.19.0-beta.22-x64-Setup.exe).
+- [Windows ARM64 installer](https://github.com/cristhiandcl/JokerForge-releases/releases/download/v0.19.0-beta.22/JokerForge-0.19.0-beta.22-arm64-Setup.exe).
+- [Windows read-only checks ZIP](https://github.com/cristhiandcl/JokerForge-releases/releases/download/v0.19.0-beta.22/JokerForge-Beta22-Windows-Checks.zip): extract all seven files and run Run-M4.4-Checks.cmd. Expected: 27 PASS, 0 FAIL. No real prompts or credential/workspace/PATH changes.
 
-Windows installers are unsigned manual prerelease builds. Signing and automatic updates remain deferred. Install over the existing app and reopen the same workspace without uninstalling or resetting credentials. No Intel Mac or native Linux desktop installer is included.
+Mac users can use Check for Updates. Windows installers remain unsigned manual prerelease builds; signing and automatic updates are deferred. Quit the current app, install over it and reopen the existing workspace without uninstalling or resetting credentials. No Intel Mac or native Linux desktop installer is included. A previously disabled Mac updater may require a one-time DMG app replacement without deleting app data.
 
-To use jokerforge by name, open About JokerForge > Terminal command, select Make jokerforge available in new terminals and click Install terminal command. The option starts unchecked and preserves existing commands and PATH/profile content. Reopen your terminal; on Windows, close all Windows Terminal/PowerShell windows first or sign out/in if its environment is cached. Run jokerforge version, jokerforge session list or jokerforge quickstart. Completion remains opt-in.
+For an expired Claude login, use Settings > Harnesses for the same host used by the chat, then its subscription sign-in flow and Open local setup for the managed local host. Sign in or Sign in again opens the temporary terminal/console and browser. Return to the same chat afterward. A subscription login does not require a vault/password reset.
 
-Working Mac updaters can offer this release through Check for Updates. If an older build already reports a disabled updater because its installed signature was invalidated, replace the app once from the DMG without deleting app data. A release feed cannot repair an already disabled updater remotely.
+About JokerForge > Terminal command retains explicit optional user PATH setup. Existing commands and profile/PATH content are preserved. Use jokerforge version, jokerforge session list or jokerforge quickstart after enabling it and reopening the terminal. JSON/JSONL, offline nested help and opt-in static completion remain supported.
 
-The owner reports all 25 installed Windows x64 CLI checks pass on the available Administrator-account machine. Separate owner PATH/history observations and installed Mac beta.21 acceptance remain pending. Standard-user and physical Windows ARM64 device acceptance are unverified. The CLI can use an existing server without a GUI window; independent headless service/SDK distribution remains separate. See the release notes for validation and limits.
+Full regression, engine E2E, signed Mac native/package/trust and both Windows package/renderer checks passed. Physical beta.22 owner acceptance follows installation; standard-user and physical Windows ARM64 acceptance remain unverified. See the release notes and manifest for scope and exact source/download identities.
 
 ## Guides and demos
 
